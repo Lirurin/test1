@@ -1,0 +1,29 @@
+@tablet: 769px;
+@mobile-md: 481px;
+@mobile-sm: 325px;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: @mobile-sm) {
+	.container {
+		max-width: 480px;
+	}
+}
+
+@media screen and (min-width: @mobile-md) {
+	.container {
+		max-width: 768px;
+	}
+}
